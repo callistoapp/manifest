@@ -4,7 +4,9 @@
 
     <default revision="master" remote="github" sync-j="8"/>
 
-    <project name="conf.git" remote="github" path="" revision="master"></project>
+    <project name="conf.git" remote="github" path="docker" revision="master">
+        <copyfile src="docker-compose.yml" dest="docker-compose.yml" />
+    </project>
     <project name="callisto-back.git" remote="github" path="back" revision="master"></project>
     <project name="callisto-front.git" remote="github" path="front" revision="master"></project>
     <project name="callisto-auth.git" remote="github" path="auth" revision="master"></project>
